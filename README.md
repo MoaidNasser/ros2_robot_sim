@@ -113,7 +113,7 @@ ros2 launch slam_toolbox online_async_launch.py use_sim_time:=true
 ### 9.	Running Navigation with Nav2
 To enable the robot to navigate to specific positions or tables, you need to launch Nav2. Use the following command in a new terminal:
 ```bash
-ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+ros2 launch my_bot nav_with_detour_supervisor.launch.py use_sim_time:=true
 ```
 *	This command will start the Nav2 Navigation Stack, which allows the robot to navigate through the environment using the map and sensors.
 *	Once Nav2 is running, you can command the robot to move to any poison or table within the restaurant map.
